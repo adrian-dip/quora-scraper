@@ -8,7 +8,7 @@ The script returns the question, answers, and engagement metrics (votes, comment
 
 ### topics=None 
 
-Expected input: list. Example: ['Computer_sciece', 'Physics']
+Expected input: list. Example: ['Computer_science', 'Physics']
 
 ### question_links=None 
 Expected input: list. Links to questions if you already scraped topics or are using data from your own sources.
