@@ -26,7 +26,7 @@ Expected input: int. Save when the number of questions scraped >= save_frequency
 
 Due to Quora's anti-scraping measures, we have to go through hoops to get the viewcount. This makes the program unstable, which is why when get_views=True, we use the multiprocessing module to timeout the script as it has a 6% failure rate. This means much slower scraping. Consider running several scripts at the same time if you need the views.
 
-When get_views=False, the program is much faster as it starts with a new question as soon as it finishes scraping the page.
+When get_views=False, the program is much faster as it starts with a new question as soon as it finishes scraping the previous page.
 
 ## Important notice
 get_views=True results in much slower scraping. If you find a way to evade the antiscraping algo or have an idea to improve efficiency, please feel free to make a pull request!
