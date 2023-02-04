@@ -11,7 +11,7 @@ def main(topics=None, question_links=None, save_dir = None, previous_save_number
     assert type(topics) is list, 'topics should be a list of links'
     assert type(question_links) is list, 'question_links should be a list of links'
 
-    if topics:
+    if len(topics) == 0:
         question_links = questions(topics)
         if get_views:
             get_answers_w_views(question_links, n_save=previous_save_number, save_frequency=save_frequency_main)
