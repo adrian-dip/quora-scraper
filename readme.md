@@ -21,7 +21,7 @@ Optional. Expected input: list. Example: ['Computer_science', 'Physics']
 Optional. Expected input: list. Links to questions if you already scraped topics or are using data from your own sources.
 
 ### save_dir = None
-Expected input: str. Save directory. To save in the same directory you store you're running the script, pelase set to "".
+Expected input: str. Save directory. To save in the same directory you're running the script, pelase set to "".
 
 ### save_frequency_main=100 
 Expected input: int. Save when the number of questions scraped >= than this value. Set to a lower number if you have an unstable internet connection, or a higher number if you want fewer but larger files.
