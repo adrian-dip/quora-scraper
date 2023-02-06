@@ -2,7 +2,7 @@
 
 Quora scraper (works as of Jan. 2023). The script can scrap questions from a topic (https://www.quora.com/topic/Finance -> ['https://www.quora.com/Using-technical-analysis-do-you-think-the-S-P-500', ...]) and then scrap the answers. If you already have links pointing to questions, you can leave the argument empty (see below).
 
-The script returns the question, answers, and engagement metrics (votes, comments, shares, and views) as a .csv file and related questions as a .pkl file. 
+The script returns the questions, answers, and engagement metrics (votes, comments, shares, and views) as a .csv file and related questions as a .pkl file. 
 
 ## Scraping options
 
