@@ -32,7 +32,7 @@ Expected input: int. When the script saves questions, the total number of questi
 
 ### get_views=False
 
-Due to Quora's anti-scraping measures, we have to go through hoops to get the viewcount. This makes the program unstable, which is why when get_views=True, we use the multiprocessing module to timeout the script as it has a 6% failure rate. This means much slower scraping as the script runs for 240 seconds per page before ending the execution. When get_views=False, the program is much faster as it starts with a new question a couple of seconds after it finishes scraping the previous page.
+Due to Quora's anti-scraping measures, we have to go through hoops to get the viewcount. This makes the program unstable, which is why when get_views=True, we use the multiprocessing module to time out the script because it has a 6% failure rate. This means much slower scraping as the script always runs for 240 seconds per page before ending the execution. When get_views=False, the program is much faster because it starts with a new question a couple of seconds after it finishes scraping the previous page.
 
 Consider leaving this argument as False or running several scripts at the same time if you really need the views.
 
