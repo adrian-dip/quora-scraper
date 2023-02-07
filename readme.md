@@ -1,6 +1,6 @@
 # Quora scraper
 
-Quora scraper (works as of Jan. 2023). The script can scrape questions from a topic (https://www.quora.com/topic/Finance -> ['https://www.quora.com/Using-technical-analysis-do-you-think-the-S-P-500', ...]) and then scrape the answers. If you already have links pointing to questions, you can leave the argument empty (see below).
+Quora scraper (works as of Jan. 2023). The script can scrape questions from a topic (https://www.quora.com/topic/Finance -> ['https://www.quora.com/Using-technical-analysis-do-you-think-the-S-P-500', ...]) and then scrape the answers. If you already have links pointing to questions, you can also use this code (see below).
 
 The script returns the questions, answers, and engagement metrics (votes, comments, shares, and views) as a .csv file. It also saves links to related questions in a separate .pkl file for future scraping. 
 
