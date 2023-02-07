@@ -8,7 +8,7 @@ def main(topics=None, question_links=None, save_dir = None, previous_save_number
         topics = []
 
     assert type(save_dir) is str, 'save_dir should be a valid string pointing to a directory'
-    assert type(topics) is list, 'topics should be a list of links'
+    assert type(topics) is list, 'topics should be a list of topics'
     assert type(question_links) is list, 'question_links should be a list of links'
 
     if len(topics) == 0:
