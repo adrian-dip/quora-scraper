@@ -1,6 +1,13 @@
+from typing import Optional
 from scraping_scripts import *
 
-def main(topics=None, question_links=None, save_dir = None, previous_save_number=0, save_frequency_main=100, get_views=False):
+def main(topics: Optional[list] = None, 
+         question_links: Optional[list] = None, 
+         save_dir: str = None, 
+         previous_save_number: int = 0, 
+         save_frequency_main: int = 100, 
+         get_views: bool = False
+         ) -> None:
     
     if topics is None:
         topics = []

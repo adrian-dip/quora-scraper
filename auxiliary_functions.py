@@ -31,6 +31,7 @@ def convert_date_format(date_text):
 
 
 # -------------------------------------------------------------
+# scroll up
 # -------------------------------------------------------------
 def scroll_up(self, nb_times):
     for iii in range(0, nb_times):
