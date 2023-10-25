@@ -1,8 +1,10 @@
 # Quora scraper
 
-Quora scraper (works as of Jan. 2023). The script can scrape questions from a topic (https://www.quora.com/topic/Finance -> ['https://www.quora.com/Using-technical-analysis-do-you-think-the-S-P-500', ...]) and then scrape the answers. If you already have links pointing to questions, you can also use this code (see below).
+Quora scraper (works as of Jan. 2023). The script can scrape questions from a topic (https://www.quora.com/topic/Finance -> ['https://www.quora.com/Using-technical-analysis-do-you-think-the-S-P-500', ...]) and then scrape the answers. If you already have links pointing to questions, you can also use this code (see the option "question_links" below).
 
-The script returns the questions, answers, and engagement metrics (votes, comments, shares, and views) as a .csv file. It also saves links to related questions in a separate .pkl file for future scraping. 
+The script saves the questions, answers, and engagement metrics (votes, comments, shares, and views) to a .csv file. It also saves links to related questions in a separate .pkl file for future scraping. 
+
+The script does not have console options so that you can run it from a pipeline or Shell or whatever you wish with minimal changes. 
 
 ## Scraping options
 
@@ -28,7 +30,13 @@ Expected input: int. Save when the number of questions scraped >= than this valu
 
 
 ### previous_save_number=0
-Expected input: int. When the script saves questions, the total number of questions scraped so far is part of the save name. If the program hangs for any reason, you can resume scraping in the same dir without rewriting your old work
+Expected input: int. The total number of questions scraped is part of the save name. If the program hangs, you can resume scraping without rewriting or duplicating files using this kwarg. If you want to automate this, you can always do 
+```
+files = glob.glob(save_dir + '*.csv')
+files = [int(i.group(0)) for i in map(re.compile(r'\d+').search, files)]
+previous_save_number = max(files)
+```
+But please be aware that this will default to 0 if you run a new instance on the cloud and will produce overwrite errors when you consolidate the data.
 
 ### get_views=False
 
