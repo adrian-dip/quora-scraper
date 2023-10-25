@@ -46,7 +46,7 @@ Consider leaving this argument as False or running several scripts at the same t
 
 
 ## Important notice
-get_views=True results in much slower scraping. If you find a way to evade the antiscraping algo or have an idea to improve efficiency, please feel free to message me or make a pull request!.
+get_views=True results in much slower scraping. If you find a way to evade the antiscraping algo or have an idea to improve efficiency, please feel free make a pull request.
 
 ## License
 Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) 
